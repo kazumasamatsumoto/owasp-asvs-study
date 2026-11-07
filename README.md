@@ -9,6 +9,7 @@
 
 | | 内容 | 場所 |
 | --- | --- | --- |
+| 🔍 | **要件文 → 開発の観点**への読み替え（L1 全 70 要件を、設計・実装・レビュー・テストの観点で 1 件ずつ解説） | [docs/practice/](docs/practice/) |
 | 📖 | 全 17 章の日本語解説（重要要件・NG/OK コード例・よくある脆弱性・テスト観点） | [docs/chapters/](docs/chapters/) |
 | ❓ | 各章 5 問の確認問題（答え・解説付き） | 各章の末尾 |
 | 🧪 | 脆弱なコードを直してテストを通すハンズオン 8 本（Python 標準ライブラリのみ） | [labs/](labs/) |
@@ -39,6 +40,7 @@ python3 tools/flashcards.py --level 1
 ### 入門
 - [00. ASVS とは何か — レベル・要件 ID・Top 10 との違い](docs/00-what-is-asvs.md)
 - [01. アプリを作るときに「穴」を作らないために — 機能別のやりがちなミスと対策](docs/01-developer-pitfalls.md) ⭐ 開発者はまずここ
+- [ASVS を「開発の観点」で読む — 要件文を設計・実装・レビュー・テストに読み替える](docs/practice/README.md) ⭐ L1 全 70 要件を 1 件ずつ解説
 - [学習計画](docs/study-plan.md)
 
 ### 章別解説
@@ -78,6 +80,7 @@ python3 tools/flashcards.py --level 1
 ├── docs/
 │   ├── 00-what-is-asvs.md      # 入門
 │   ├── 01-developer-pitfalls.md # 開発者向け: 機能別のやりがちな穴
+│   ├── practice/               # 要件を開発の観点で読む（L1 全要件）
 │   ├── study-plan.md           # 学習計画
 │   └── chapters/V01..V17-*.md  # 章別解説 + 確認問題
 ├── labs/                       # ハンズオン（exercise.py を直す → test_lab.py が通る）
