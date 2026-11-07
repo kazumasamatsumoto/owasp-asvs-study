@@ -13,6 +13,7 @@
 ## Week 0: 全体像
 
 - [ ] [00. ASVS とは何か](00-what-is-asvs.md)
+- [ ] [01. アプリを作るときに「穴」を作らないために](01-developer-pitfalls.md)（各章を読み終えたあとにも読み返す）
 - [ ] `python3 tools/flashcards.py --level 1 -n 10` で L1 要件の雰囲気をつかむ
 
 ## Week 1: インジェクションと入力（最頻出）

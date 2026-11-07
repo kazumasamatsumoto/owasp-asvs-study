@@ -21,8 +21,9 @@
 git clone https://github.com/kazumasamatsumoto/owasp-asvs-study.git
 cd owasp-asvs-study
 
-# 1. 全体像を読む
+# 1. 全体像を読む → 開発でやりがちな穴を知る
 open docs/00-what-is-asvs.md
+open docs/01-developer-pitfalls.md
 
 # 2. ハンズオン（最初は全部失敗します。exercise.py を直して緑にしましょう）
 python3 labs/run.py lab01
@@ -37,6 +38,7 @@ python3 tools/flashcards.py --level 1
 
 ### 入門
 - [00. ASVS とは何か — レベル・要件 ID・Top 10 との違い](docs/00-what-is-asvs.md)
+- [01. アプリを作るときに「穴」を作らないために — 機能別のやりがちなミスと対策](docs/01-developer-pitfalls.md) ⭐ 開発者はまずここ
 - [学習計画](docs/study-plan.md)
 
 ### 章別解説
@@ -75,6 +77,7 @@ python3 tools/flashcards.py --level 1
 .
 ├── docs/
 │   ├── 00-what-is-asvs.md      # 入門
+│   ├── 01-developer-pitfalls.md # 開発者向け: 機能別のやりがちな穴
 │   ├── study-plan.md           # 学習計画
 │   └── chapters/V01..V17-*.md  # 章別解説 + 確認問題
 ├── labs/                       # ハンズオン（exercise.py を直す → test_lab.py が通る）
