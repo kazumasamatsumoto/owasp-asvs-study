@@ -42,6 +42,7 @@ python3 tools/flashcards.py --level 1
 - [01. アプリを作るときに「穴」を作らないために — 機能別のやりがちなミスと対策](docs/01-developer-pitfalls.md) ⭐ 開発者はまずここ
 - [ASVS を「開発の観点」で読む — 要件文を設計・実装・レビュー・テストに読み替える](docs/practice/README.md) ⭐ L1 全 70 要件を 1 件ずつ解説
 - [学習計画](docs/study-plan.md)
+- [脆弱性の「ものさし」一覧 — CVE / CWE / CVSS / OWASP Top 10](docs/reference/README.md)
 
 ### 章別解説
 
