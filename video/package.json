@@ -1,0 +1,21 @@
+{
+  "name": "asvs-shorts",
+  "private": true,
+  "description": "OWASP ASVS を学ぶショート動画（Remotion）",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts V11-4-2 out/V11-4-2.mp4",
+    "still": "remotion still src/index.ts V11-4-2 out/V11-4-2.png --frame=400",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.200",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.200"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
+  }
+}
