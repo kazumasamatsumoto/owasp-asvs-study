@@ -1,0 +1,54 @@
+{
+  "users": [
+    [
+      1,
+      "alice",
+      "admin"
+    ],
+    [
+      2,
+      "bob",
+      "user"
+    ]
+  ],
+  "exercise_normal": {
+    "input": "bob",
+    "sql": [
+      "SELECT id, username, role FROM users WHERE username = 'bob'"
+    ],
+    "row": [
+      2,
+      "bob",
+      "user"
+    ]
+  },
+  "exercise_attack": {
+    "input": "' OR '1'='1",
+    "sql": [
+      "SELECT id, username, role FROM users WHERE username = '' OR '1'='1'"
+    ],
+    "row": [
+      1,
+      "alice",
+      "admin"
+    ]
+  },
+  "solution_normal": {
+    "input": "bob",
+    "sql": [
+      "SELECT id, username, role FROM users WHERE username = 'bob'"
+    ],
+    "row": [
+      2,
+      "bob",
+      "user"
+    ]
+  },
+  "solution_attack": {
+    "input": "' OR '1'='1",
+    "sql": [
+      "SELECT id, username, role FROM users WHERE username = ''' OR ''1''=''1'"
+    ],
+    "row": null
+  }
+}
