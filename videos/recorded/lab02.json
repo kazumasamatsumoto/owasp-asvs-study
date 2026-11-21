@@ -1,0 +1,147 @@
+{
+  "exercise_normal": {
+    "author": "bob",
+    "body": "おいしかったです",
+    "html": "<div class=\"comment\"><b>bob</b>: おいしかったです</div>",
+    "parts": [
+      [
+        "tag",
+        "div"
+      ],
+      [
+        "tag",
+        "b"
+      ],
+      [
+        "text",
+        "bob"
+      ],
+      [
+        "end",
+        "b"
+      ],
+      [
+        "text",
+        ": おいしかったです"
+      ],
+      [
+        "end",
+        "div"
+      ]
+    ],
+    "script_tags": 0
+  },
+  "exercise_attack": {
+    "author": "mallory",
+    "body": "<script>alert(document.cookie)</script>",
+    "html": "<div class=\"comment\"><b>mallory</b>: <script>alert(document.cookie)</script></div>",
+    "parts": [
+      [
+        "tag",
+        "div"
+      ],
+      [
+        "tag",
+        "b"
+      ],
+      [
+        "text",
+        "mallory"
+      ],
+      [
+        "end",
+        "b"
+      ],
+      [
+        "text",
+        ": "
+      ],
+      [
+        "tag",
+        "script"
+      ],
+      [
+        "script",
+        "alert(document.cookie)"
+      ],
+      [
+        "end",
+        "script"
+      ],
+      [
+        "end",
+        "div"
+      ]
+    ],
+    "script_tags": 1
+  },
+  "solution_normal": {
+    "author": "bob",
+    "body": "おいしかったです",
+    "html": "<div class=\"comment\"><b>bob</b>: おいしかったです</div>",
+    "parts": [
+      [
+        "tag",
+        "div"
+      ],
+      [
+        "tag",
+        "b"
+      ],
+      [
+        "text",
+        "bob"
+      ],
+      [
+        "end",
+        "b"
+      ],
+      [
+        "text",
+        ": おいしかったです"
+      ],
+      [
+        "end",
+        "div"
+      ]
+    ],
+    "script_tags": 0
+  },
+  "solution_attack": {
+    "author": "mallory",
+    "body": "<script>alert(document.cookie)</script>",
+    "html": "<div class=\"comment\"><b>mallory</b>: &lt;script&gt;alert(document.cookie)&lt;/script&gt;</div>",
+    "parts": [
+      [
+        "tag",
+        "div"
+      ],
+      [
+        "tag",
+        "b"
+      ],
+      [
+        "text",
+        "mallory"
+      ],
+      [
+        "end",
+        "b"
+      ],
+      [
+        "text",
+        ": <script>alert(document.cookie)</script>"
+      ],
+      [
+        "end",
+        "div"
+      ]
+    ],
+    "script_tags": 0
+  },
+  "quiz": {
+    "url": "javascript:alert(document.cookie)",
+    "escaped": "javascript:alert(document.cookie)",
+    "solution_error": "unsafe URL: 'javascript:alert(document.cookie)'"
+  }
+}

@@ -1,3 +1,4 @@
 [
-  { "id": "rvmQNVNCDXw", "video": "sqlInjection", "cwe": "CWE-89", "at": "2026-11-21T07:00:00+09:00" }
+  { "id": "rvmQNVNCDXw", "video": "sqlInjection", "cwe": "CWE-89", "at": "2026-11-21T07:00:00+09:00" },
+  { "id": "2LCDqsHjs-E", "video": "xss", "cwe": "CWE-79", "at": "2026-11-22T07:00:00+09:00" }
 ]

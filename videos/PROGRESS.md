@@ -5,7 +5,7 @@
 | # | テーマ | CWE | 題材（記録を録るもの） | 動画名 | 状態 | YouTube | 長さ | 公開 |
 | :---: | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | SQL インジェクション | CWE-89 | labs/lab01 | sqlInjection | 予約済 | [rvmQNVNCDXw](https://youtu.be/rvmQNVNCDXw) | 4:08 | 2026-11-21 7:00 |
-| 2 | XSS（出力エンコード） | CWE-79 | labs/lab02 | | 未 | | | |
+| 2 | XSS（出力エンコード） | CWE-79 | labs/lab02 | xss | 予約済 | [2LCDqsHjs-E](https://youtu.be/2LCDqsHjs-E) | 4:44 | 2026-11-22 7:00 |
 | 3 | IDOR（他人のデータが見える） | CWE-639 | labs/lab04 | | 未 | | | |
 | 4 | 危険なファイルのアップロード | CWE-434 | labs/lab05 | | 未 | | | |
 | 5 | パスワードの保存 | CWE-916 | labs/lab03 | | 未 | | | |
