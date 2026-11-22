@@ -1,0 +1,108 @@
+{
+  "exercise": {
+    "get_100": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 100,
+      "ok": {
+        "id": 100,
+        "owner_id": 1,
+        "amount": 5000,
+        "status": "unpaid",
+        "memo": ""
+      }
+    },
+    "get_200": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 200,
+      "ok": {
+        "id": 200,
+        "owner_id": 2,
+        "amount": 8000,
+        "status": "unpaid",
+        "memo": ""
+      }
+    },
+    "get_999": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 999,
+      "error": "NotFound: 999"
+    },
+    "update_paid": {
+      "invoice_id": 100,
+      "changes": {
+        "memo": "ok",
+        "status": "paid"
+      },
+      "ok": {
+        "id": 100,
+        "owner_id": 1,
+        "amount": 5000,
+        "status": "paid",
+        "memo": "ok"
+      },
+      "after": {
+        "id": 100,
+        "owner_id": 1,
+        "amount": 5000,
+        "status": "paid",
+        "memo": "ok"
+      }
+    }
+  },
+  "solution": {
+    "get_100": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 100,
+      "ok": {
+        "id": 100,
+        "owner_id": 1,
+        "amount": 5000,
+        "status": "unpaid",
+        "memo": ""
+      }
+    },
+    "get_200": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 200,
+      "error": "NotFound: 200"
+    },
+    "get_999": {
+      "user": {
+        "id": 1,
+        "role": "user"
+      },
+      "invoice_id": 999,
+      "error": "NotFound: 999"
+    },
+    "update_paid": {
+      "invoice_id": 100,
+      "changes": {
+        "memo": "ok",
+        "status": "paid"
+      },
+      "error": "Forbidden: cannot modify: ['status']",
+      "after": {
+        "id": 100,
+        "owner_id": 1,
+        "amount": 5000,
+        "status": "unpaid",
+        "memo": ""
+      }
+    }
+  }
+}
