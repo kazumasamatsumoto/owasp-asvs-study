@@ -6,7 +6,7 @@
 | :---: | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | SQL インジェクション | CWE-89 | labs/lab01 | sqlInjection | 予約済 | [rvmQNVNCDXw](https://youtu.be/rvmQNVNCDXw) | 4:08 | 2026-11-21 7:00 |
 | 2 | XSS（出力エンコード） | CWE-79 | labs/lab02 | xss | 予約済 | [2LCDqsHjs-E](https://youtu.be/2LCDqsHjs-E) | 4:44 | 2026-11-22 7:00 |
-| 3 | IDOR（他人のデータが見える） | CWE-639 | labs/lab04 | idor | 作成済（未アップロード） | | 4:21 | |
+| 3 | IDOR（他人のデータが見える） | CWE-639 | labs/lab04 | idor | 予約済 | [T_dG4eYp8jw](https://youtu.be/T_dG4eYp8jw) | 4:22 | 2026-11-24 7:00 |
 | 4 | 危険なファイルのアップロード | CWE-434 | labs/lab05 | | 未 | | | |
 | 5 | パスワードの保存 | CWE-916 | labs/lab03 | | 未 | | | |
 | 6 | セッション固定 | CWE-384 | labs/lab06 | | 未 | | | |
