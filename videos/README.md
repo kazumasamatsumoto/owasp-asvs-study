@@ -68,6 +68,7 @@ npx remotion ffmpeg -i out/X.mp4 -c:v libx264 -preset slow -b:v <kbps> -pass 2 -
 ### YouTube へのアップロード
 
 - 必ず https://studio.youtube.com/channel/UC2vH2sKsZKshRb2Y-QlNsUQ/videos/upload?d=ud から上げる（youtube.com/upload は別のチャンネルに飛ぶことがある）。
+- 「このページを表示する権限がありません」になったら、別の Google アカウントに切り替わっている。https://www.youtube.com/account を開き、右上のアイコン →「アカウントを切り替える」→ 一覧の下の「その他のアカウント」から、school.angular.ai のアカウントの「のんかろりー2」を選んでから、上の URL を開き直す。パスワードを求められたときは、自分では入れずにユーザーに頼む。
 - タイトル・説明に山かっこ（`<` `>`）は使えない。
 - 説明：紹介 1〜2 文、0:00 から始まるチャプター、「画面のコードは … のソースそのままです」、演習の URL、関連する CWE / OWASP / ASVS、`VOICEVOX:青山龍星`。
 - 子ども向けは「いいえ」。公開設定は**予約投稿**。日付は `PUBLISH-SCHEDULE.json` の最後の日の翌日、7:00、タイムゾーン (GMT+0900)。
