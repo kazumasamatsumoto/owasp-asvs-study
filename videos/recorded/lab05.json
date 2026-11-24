@@ -1,0 +1,50 @@
+{
+  "exercise_normal": {
+    "filename": "cat.png",
+    "data": "89 50 4e 47 0d 0a 1a 0a",
+    "saved": "cat.png",
+    "saved_data": "89 50 4e 47 0d 0a 1a 0a",
+    "files_in_uploads": [
+      "cat.png"
+    ]
+  },
+  "exercise_attack": {
+    "filename": "shell.php",
+    "data": "<?php system($_GET['c']); ?>",
+    "saved": "shell.php",
+    "saved_data": "<?php system($_GET['c']); ?>",
+    "files_in_uploads": [
+      "shell.php"
+    ]
+  },
+  "exercise_quiz": {
+    "filename": "photo.png",
+    "data": "<?php system($_GET['c']); ?>",
+    "saved": "photo.png",
+    "saved_data": "<?php system($_GET['c']); ?>",
+    "files_in_uploads": [
+      "photo.png"
+    ]
+  },
+  "solution_normal": {
+    "filename": "cat.png",
+    "data": "89 50 4e 47 0d 0a 1a 0a",
+    "saved": "a0b5ea8f253e140f65bb16d5716ebca0.png",
+    "saved_data": "89 50 4e 47 0d 0a 1a 0a",
+    "files_in_uploads": [
+      "a0b5ea8f253e140f65bb16d5716ebca0.png"
+    ]
+  },
+  "solution_attack": {
+    "filename": "shell.php",
+    "data": "<?php system($_GET['c']); ?>",
+    "error": "ValueError: extension not allowed: '.php'",
+    "files_in_uploads": []
+  },
+  "solution_quiz": {
+    "filename": "photo.png",
+    "data": "<?php system($_GET['c']); ?>",
+    "error": "ValueError: file content does not match extension",
+    "files_in_uploads": []
+  }
+}
