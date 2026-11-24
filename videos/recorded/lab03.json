@@ -1,0 +1,34 @@
+{
+  "password": "Password1",
+  "dictionary_size": 28,
+  "quiz_registered": "Password1Password1ab",
+  "quiz_typed": "Password1Password1abXYZ",
+  "exercise": {
+    "validate": "OK",
+    "alice": "7c6a180b36896a0a8c02787eeafb0e4c",
+    "bob": "7c6a180b36896a0a8c02787eeafb0e4c",
+    "same": true,
+    "verify_lowercase": true,
+    "quiz_verify_longer": true,
+    "crack": {
+      "found": "password1",
+      "tries": 13,
+      "seconds": 8e-06
+    },
+    "hashes_per_sec": 2753089
+  },
+  "solution": {
+    "validate": "ValueError: this password is too common",
+    "alice": "scrypt$131072$8$1$sxMLJCUGqQA8SIkm2rCHgg==$tRfHF60lj4TwdlNp95j7u/tjk9STGQUU5+iT6yKQiR8=",
+    "bob": "scrypt$131072$8$1$mYoMm7or/wsMWYunhHiM4A==$gOkM2NTNU5gbVO2+5kc/ITrG1JT2ti3ikPmMhm8YlRw=",
+    "same": false,
+    "verify_lowercase": false,
+    "quiz_verify_longer": false,
+    "crack": {
+      "found": null,
+      "tries": 28,
+      "seconds": 5.047213
+    },
+    "hashes_per_sec": 6
+  }
+}
