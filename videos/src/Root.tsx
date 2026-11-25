@@ -17,6 +17,9 @@ import fuDurations from './videos/fileUpload/durations.json';
 import { SCRIPT as PS } from './videos/passwordStorage/script';
 import { SCENES as PS_SCENES } from './videos/passwordStorage/Scenes';
 import psDurations from './videos/passwordStorage/durations.json';
+import { SCRIPT as SF } from './videos/sessionFixation/script';
+import { SCENES as SF_SCENES } from './videos/sessionFixation/Scenes';
+import sfDurations from './videos/sessionFixation/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -31,6 +34,7 @@ const fuShort = makeShort('fileUpload', FU, ['hook', 'attack', 'why1', 'fixRec',
   credit,
 });
 const ps = makeVideo('passwordStorage', PS, PS_SCENES, psDurations, { credit });
+const sf = makeVideo('sessionFixation', SF, SF_SCENES, sfDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -38,6 +42,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Xss" component={xss.Video} durationInFrames={xss.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="Idor" component={idor.Video} durationInFrames={idor.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="FileUpload" component={fu.Video} durationInFrames={fu.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="SessionFixation" component={sf.Video} durationInFrames={sf.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="PasswordStorage" component={ps.Video} durationInFrames={ps.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="FileUploadShort" component={fuShort.Video} durationInFrames={fuShort.frames} fps={FPS} width={SHORT_W} height={SHORT_H} />
   </>

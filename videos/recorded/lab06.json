@@ -1,0 +1,25 @@
+{
+  "idle_timeout_min": 30,
+  "exercise": {
+    "attacker_token": "831877",
+    "victim_token": "831877",
+    "same": true,
+    "attacker_get_user": "alice",
+    "victim_get_user": "alice",
+    "token_length": 6,
+    "cookie": "session=831877; Path=/",
+    "after_logout_get_user": "alice",
+    "after_idle_get_user": "bob"
+  },
+  "solution": {
+    "attacker_token": "K6xaJud2buTWEFE71p3C2eVotCNy4YefGqBRmKCRoAI",
+    "victim_token": "EGDMG7vAj1iBb8rXMomD5IkpWg6Nfs3hPzSUfIe3GU4",
+    "same": false,
+    "attacker_get_user": null,
+    "victim_get_user": "alice",
+    "token_length": 43,
+    "cookie": "__Host-session=EGDMG7vAj1iBb8rXMomD5IkpWg6Nfs3hPzSUfIe3GU4; Path=/; Secure; HttpOnly; SameSite=Lax",
+    "after_logout_get_user": null,
+    "after_idle_get_user": null
+  }
+}

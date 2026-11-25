@@ -9,7 +9,7 @@
 | 3 | IDOR（他人のデータが見える） | CWE-639 | labs/lab04 | idor | 予約済 | [T_dG4eYp8jw](https://youtu.be/T_dG4eYp8jw) | 4:22 | 2026-11-24 7:00 |
 | 4 | 危険なファイルのアップロード | CWE-434 | labs/lab05 | fileUpload | 予約済 | [jQXaEJjrZ-Y](https://youtu.be/jQXaEJjrZ-Y) | 4:41 | 2026-11-25 7:00 |
 | 5 | パスワードの保存 | CWE-916 | labs/lab03 | passwordStorage | 予約済 | [R3N1Q-yvgxo](https://youtu.be/R3N1Q-yvgxo) | 4:28 | 2026-11-26 7:00 |
-| 6 | セッション固定 | CWE-384 | labs/lab06 | | 未 | | | |
+| 6 | セッション固定 | CWE-384 | labs/lab06 | sessionFixation | 予約済 | [A6zy8u7zf5s](https://youtu.be/A6zy8u7zf5s) | 4:16 | 2026-11-27 7:00 |
 | 7 | JWT の署名を検証しない | CWE-347 | labs/lab08 | | 未 | | | |
 | 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | | 未 | | | |
 | 9 | CSRF | CWE-352 | （Lab を追加） | | 未 | | | |

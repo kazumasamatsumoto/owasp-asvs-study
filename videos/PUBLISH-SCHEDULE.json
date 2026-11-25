@@ -3,5 +3,6 @@
   { "id": "2LCDqsHjs-E", "video": "xss", "cwe": "CWE-79", "at": "2026-11-22T07:00:00+09:00" },
   { "id": "T_dG4eYp8jw", "video": "idor", "cwe": "CWE-639", "at": "2026-11-24T07:00:00+09:00" },
   { "id": "jQXaEJjrZ-Y", "video": "fileUpload", "cwe": "CWE-434", "at": "2026-11-25T07:00:00+09:00" },
-  { "id": "R3N1Q-yvgxo", "video": "passwordStorage", "cwe": "CWE-916", "at": "2026-11-26T07:00:00+09:00" }
+  { "id": "R3N1Q-yvgxo", "video": "passwordStorage", "cwe": "CWE-916", "at": "2026-11-26T07:00:00+09:00" },
+  { "id": "A6zy8u7zf5s", "video": "sessionFixation", "cwe": "CWE-384", "at": "2026-11-27T07:00:00+09:00" }
 ]
