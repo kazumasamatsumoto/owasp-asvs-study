@@ -76,6 +76,18 @@ npx remotion ffmpeg -i out/X.mp4 -c:v libx264 -preset slow -b:v <kbps> -pass 2 -
 - チェックが「問題は検出されませんでした」になってから「スケジュールを設定」で保存する。
 - 保存したら `PROGRESS.md` と `PUBLISH-SCHEDULE.json` に追記する。
 
+### ショート（縦型）
+
+本編の場面と声をそのまま使い、縦型 1080×1920・60 秒以内のショートを作る（`src/makeShort.tsx`）。
+横の場面は縮めて中ほどに置き、上に題名と CWE、下に大きな字幕、最後に「本編で」の案内を出す。
+YouTube Studio の「クリップとショート動画」は横の動画の中央を切り抜くだけで字幕やコードの左右が切れるので使わない。
+
+- `src/Root.tsx` の `makeShort('<名前>', SCRIPT, [行の id …], SCENES, durations, { title, tag, end, credit })` に、
+  「つかみ → 攻撃の記録 → なぜ危ないか → 直したコードの記録 → まとめ」になる行を選ぶ（合計 60 秒以内。声は作り直さない）。
+- 書き出しと圧縮は本編と同じ（`npx remotion render <名前>Short out/<名前>-short.mp4`、9.3MB × 8 ÷ 秒数 − 64k）。
+- アップロードも本編と同じ URL から。タイトルの最後に `#Shorts`、説明に本編の URL と演習の URL。
+  予約は本編の公開日の翌日 12:00 (GMT+0900)。保存したら `PROGRESS.md` のショートの表に追記する。
+
 ## 台本の下書き
 
 [drafts/](drafts/) に、場面ごとの「画面」と「ナレーション」の下書きを置きます。

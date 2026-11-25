@@ -1,5 +1,6 @@
 import { Composition } from 'remotion';
 import { makeVideo } from './makeVideo';
+import { makeShort, SHORT_H, SHORT_W } from './makeShort';
 import { FPS } from './theme';
 import { SCRIPT as SQLI } from './videos/sqlInjection/script';
 import { SCENES as SQLI_SCENES } from './videos/sqlInjection/Scenes';
@@ -22,6 +23,13 @@ const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credi
 const xss = makeVideo('xss', XSS, XSS_SCENES, xssDurations, { credit });
 const idor = makeVideo('idor', IDOR, IDOR_SCENES, idorDurations, { credit });
 const fu = makeVideo('fileUpload', FU, FU_SCENES, fuDurations, { credit });
+// ショート: 本編の場面と声から、60 秒以内に収まる行だけを選ぶ
+const fuShort = makeShort('fileUpload', FU, ['hook', 'attack', 'why1', 'fixRec', 'recap'], FU_SCENES, fuDurations, {
+  title: '危険なファイルのアップロード',
+  tag: 'CWE-434',
+  end: '実際の事件とクイズは本編で',
+  credit,
+});
 const ps = makeVideo('passwordStorage', PS, PS_SCENES, psDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
@@ -31,5 +39,6 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Idor" component={idor.Video} durationInFrames={idor.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="FileUpload" component={fu.Video} durationInFrames={fu.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="PasswordStorage" component={ps.Video} durationInFrames={ps.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="FileUploadShort" component={fuShort.Video} durationInFrames={fuShort.frames} fps={FPS} width={SHORT_W} height={SHORT_H} />
   </>
 );
