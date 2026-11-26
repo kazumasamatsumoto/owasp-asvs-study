@@ -1,0 +1,65 @@
+{
+  "tokens": {
+    "valid": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAiYWxpY2UiLCAiYXVkIjogImh0dHBzOi8vYXBpLmV4YW1wbGUuY29tIiwgImV4cCI6IDE3MDAwMDAzMDAsICJpYXQiOiAxNzAwMDAwMDAwfQ.N7RsRE__Z1IhCKhc4lurSG2CSNjm9eLG_NhXvjH_GBc",
+    "tampered": "eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJzdWIiOiAiYWRtaW4iLCAiYXVkIjogImh0dHBzOi8vYXBpLmV4YW1wbGUuY29tIiwgImV4cCI6IDE3MDAwMDAzMDAsICJpYXQiOiAxNzAwMDAwMDAwfQ.N7RsRE__Z1IhCKhc4lurSG2CSNjm9eLG_NhXvjH_GBc",
+    "alg_none": "eyJhbGciOiAibm9uZSIsICJ0eXAiOiAiSldUIn0.eyJzdWIiOiAiYWRtaW4iLCAiYXVkIjogImh0dHBzOi8vYXBpLmV4YW1wbGUuY29tIiwgImV4cCI6IDE3MDAwMDAzMDAsICJpYXQiOiAxNzAwMDAwMDAwfQ."
+  },
+  "payload_valid": {
+    "sub": "alice",
+    "aud": "https://api.example.com",
+    "exp": 1700000300,
+    "iat": 1700000000
+  },
+  "exercise": {
+    "valid": {
+      "accepted": true,
+      "sub": "alice"
+    },
+    "tampered": {
+      "accepted": true,
+      "sub": "admin"
+    },
+    "alg_none": {
+      "accepted": true,
+      "sub": "admin"
+    },
+    "expired": {
+      "accepted": true,
+      "sub": "alice"
+    },
+    "wrong_aud": {
+      "accepted": true,
+      "sub": "alice"
+    },
+    "alg_hs512": {
+      "accepted": true,
+      "sub": "alice"
+    }
+  },
+  "solution": {
+    "valid": {
+      "accepted": true,
+      "sub": "alice"
+    },
+    "tampered": {
+      "accepted": false,
+      "reason": "bad signature"
+    },
+    "alg_none": {
+      "accepted": false,
+      "reason": "algorithm not allowed"
+    },
+    "expired": {
+      "accepted": false,
+      "reason": "expired"
+    },
+    "wrong_aud": {
+      "accepted": false,
+      "reason": "audience mismatch"
+    },
+    "alg_hs512": {
+      "accepted": false,
+      "reason": "algorithm not allowed"
+    }
+  }
+}
