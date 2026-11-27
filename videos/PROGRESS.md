@@ -11,7 +11,7 @@
 | 5 | パスワードの保存 | CWE-916 | labs/lab03 | passwordStorage | 予約済 | [R3N1Q-yvgxo](https://youtu.be/R3N1Q-yvgxo) | 4:28 | 2026-11-26 7:00 |
 | 6 | セッション固定 | CWE-384 | labs/lab06 | sessionFixation | 予約済 | [A6zy8u7zf5s](https://youtu.be/A6zy8u7zf5s) | 4:16 | 2026-11-27 7:00 |
 | 7 | JWT の署名を検証しない | CWE-347 | labs/lab08 | jwtVerification | 予約済 | [yYDE6ARGENY](https://youtu.be/yYDE6ARGENY) | 4:28 | 2026-11-28 7:00 |
-| 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | | 未 | | | |
+| 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | securityHeaders | 予約済 | [WykG4ziKcFo](https://youtu.be/WykG4ziKcFo) | 4:34 | 2026-11-29 7:00 |
 | 9 | CSRF | CWE-352 | （Lab を追加） | | 未 | | | |
 | 10 | パストラバーサル | CWE-22 | （Lab を追加） | | 未 | | | |
 | 11 | OS コマンドインジェクション | CWE-78 | （Lab を追加） | | 未 | | | |

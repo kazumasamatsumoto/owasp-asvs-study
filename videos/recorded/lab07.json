@@ -1,0 +1,122 @@
+{
+  "nonce": "r4nd0m",
+  "exercise": {
+    "app": {
+      "origin": "https://app.example.com",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src * 'unsafe-inline' 'unsafe-eval'",
+        "Access-Control-Allow-Origin": "https://app.example.com",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "can_read_with_cookie": true
+    },
+    "evil": {
+      "origin": "https://evil.example",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src * 'unsafe-inline' 'unsafe-eval'",
+        "Access-Control-Allow-Origin": "https://evil.example",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "can_read_with_cookie": true
+    },
+    "lookalike": {
+      "origin": "https://app.example.com.evil.example",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src * 'unsafe-inline' 'unsafe-eval'",
+        "Access-Control-Allow-Origin": "https://app.example.com.evil.example",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "can_read_with_cookie": true
+    },
+    "http_app": {
+      "origin": "http://app.example.com",
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src * 'unsafe-inline' 'unsafe-eval'",
+        "Access-Control-Allow-Origin": "http://app.example.com",
+        "Access-Control-Allow-Credentials": "true"
+      },
+      "can_read_with_cookie": true
+    },
+    "none": {
+      "origin": null,
+      "headers": {
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src * 'unsafe-inline' 'unsafe-eval'"
+      },
+      "can_read_with_cookie": false
+    },
+    "missing": [
+      "Strict-Transport-Security",
+      "X-Content-Type-Options",
+      "Referrer-Policy",
+      "Cross-Origin-Opener-Policy"
+    ],
+    "csp": "default-src * 'unsafe-inline' 'unsafe-eval'"
+  },
+  "solution": {
+    "app": {
+      "origin": "https://app.example.com",
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Access-Control-Allow-Origin": "https://app.example.com",
+        "Access-Control-Allow-Credentials": "true",
+        "Vary": "Origin"
+      },
+      "can_read_with_cookie": true
+    },
+    "evil": {
+      "origin": "https://evil.example",
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      },
+      "can_read_with_cookie": false
+    },
+    "lookalike": {
+      "origin": "https://app.example.com.evil.example",
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      },
+      "can_read_with_cookie": false
+    },
+    "http_app": {
+      "origin": "http://app.example.com",
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      },
+      "can_read_with_cookie": false
+    },
+    "none": {
+      "origin": null,
+      "headers": {
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Content-Security-Policy": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Cross-Origin-Opener-Policy": "same-origin"
+      },
+      "can_read_with_cookie": false
+    },
+    "missing": [],
+    "csp": "default-src 'self'; script-src 'nonce-r4nd0m' 'strict-dynamic'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+  }
+}

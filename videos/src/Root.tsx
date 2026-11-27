@@ -23,6 +23,9 @@ import sfDurations from './videos/sessionFixation/durations.json';
 import { SCRIPT as JWT } from './videos/jwtVerification/script';
 import { SCENES as JWT_SCENES } from './videos/jwtVerification/Scenes';
 import jwtDurations from './videos/jwtVerification/durations.json';
+import { SCRIPT as SH } from './videos/securityHeaders/script';
+import { SCENES as SH_SCENES } from './videos/securityHeaders/Scenes';
+import shDurations from './videos/securityHeaders/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -39,6 +42,7 @@ const fuShort = makeShort('fileUpload', FU, ['hook', 'attack', 'why1', 'fixRec',
 const ps = makeVideo('passwordStorage', PS, PS_SCENES, psDurations, { credit });
 const sf = makeVideo('sessionFixation', SF, SF_SCENES, sfDurations, { credit });
 const jwt = makeVideo('jwtVerification', JWT, JWT_SCENES, jwtDurations, { credit });
+const sh = makeVideo('securityHeaders', SH, SH_SCENES, shDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -48,6 +52,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="FileUpload" component={fu.Video} durationInFrames={fu.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="SessionFixation" component={sf.Video} durationInFrames={sf.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="JwtVerification" component={jwt.Video} durationInFrames={jwt.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="SecurityHeaders" component={sh.Video} durationInFrames={sh.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="PasswordStorage" component={ps.Video} durationInFrames={ps.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="FileUploadShort" component={fuShort.Video} durationInFrames={fuShort.frames} fps={FPS} width={SHORT_W} height={SHORT_H} />
   </>
