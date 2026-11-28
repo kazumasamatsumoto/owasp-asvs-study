@@ -14,10 +14,10 @@
 | 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | securityHeaders | 予約済 | [WykG4ziKcFo](https://youtu.be/WykG4ziKcFo) | 4:34 | 2026-11-29 7:00 |
 | 9 | CSRF | CWE-352 | labs/lab09 | csrf | 予約済 | [SXHzMt02HT8](https://youtu.be/SXHzMt02HT8) | 4:08 | 2026-11-30 7:00 |
 | 10 | パストラバーサル | CWE-22 | labs/lab10 | pathTraversal | 予約済 | [-KEV7FoSb8M](https://youtu.be/-KEV7FoSb8M) | 4:27 | 2026-12-01 7:00 |
-| 11 | OS コマンドインジェクション | CWE-78 | labs/lab11 | | 未 | | | |
-| 12 | SSRF | CWE-918 | （Lab を追加） | | 未 | | | |
-| 13 | 安全でないデシリアライズ | CWE-502 | （Lab を追加） | | 未 | | | |
-| 14 | 認可チェックの欠如 | CWE-862 | （Lab を追加） | | 未 | | | |
+| 11 | OS コマンドインジェクション | CWE-78 | labs/lab11 | commandInjection | 予約済 | [pkjOuOQjpBQ](https://youtu.be/pkjOuOQjpBQ) | 4:19 | 2026-12-02 7:00 |
+| 12 | SSRF | CWE-918 | labs/lab12 | | 未 | | | |
+| 13 | 安全でないデシリアライズ | CWE-502 | labs/lab13 | | 未 | | | |
+| 14 | 認可チェックの欠如 | CWE-862 | labs/lab14 | | 未 | | | |
 | 15 | コードインジェクション | CWE-94 | （Lab を追加） | | 未 | | | |
 | 16 | 重要な機能に認証がない | CWE-306 | （Lab を追加） | | 未 | | | |
 | 17 | 回数制限がない（総当たり） | CWE-770 | （Lab を追加） | | 未 | | | |

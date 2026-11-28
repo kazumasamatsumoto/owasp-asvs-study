@@ -1,0 +1,67 @@
+{
+  "exercise": {
+    "normal": {
+      "cookie_head": "gAWVJQAAAAAAAAB9lIwFaXRl…",
+      "loaded": true,
+      "cart": {
+        "items": [
+          {
+            "id": "A1",
+            "qty": 2
+          }
+        ]
+      },
+      "pwned_created": false
+    },
+    "evil": {
+      "cookie_head": "gAWVhwAAAAAAAAB9lIwFaXRl…",
+      "loaded": true,
+      "cart": {
+        "items": [
+          null
+        ]
+      },
+      "pwned_created": true
+    },
+    "quiz_negative": {
+      "cookie_head": "gAWVKAAAAAAAAAB9lIwFaXRl…",
+      "loaded": true,
+      "cart": {
+        "items": [
+          {
+            "id": "A1",
+            "qty": -3
+          }
+        ]
+      },
+      "pwned_created": false
+    }
+  },
+  "solution": {
+    "normal": {
+      "cookie_head": "eyJpdGVtcyI6IFt7ImlkIjog…",
+      "loaded": true,
+      "cart": {
+        "items": [
+          {
+            "id": "A1",
+            "qty": 2
+          }
+        ]
+      },
+      "pwned_created": false
+    },
+    "evil": {
+      "cookie_head": "gAWVhwAAAAAAAAB9lIwFaXRl…",
+      "loaded": false,
+      "reason": "not a json cart",
+      "pwned_created": false
+    },
+    "quiz_negative": {
+      "cookie_head": "eyJpdGVtcyI6IFt7ImlkIjog…",
+      "loaded": false,
+      "reason": "bad qty",
+      "pwned_created": false
+    }
+  }
+}

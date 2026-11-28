@@ -1,0 +1,164 @@
+{
+  "exercise": {
+    "admin_export": {
+      "who": "alice（admin）",
+      "action": "export_users",
+      "params": {},
+      "allowed": true,
+      "result": [
+        {
+          "id": "u1",
+          "name": "alice",
+          "email": "alice@example.com"
+        },
+        {
+          "id": "u2",
+          "name": "bob",
+          "email": "bob@example.com"
+        },
+        {
+          "id": "u3",
+          "name": "carol",
+          "email": "carol@example.com"
+        }
+      ],
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    },
+    "member_delete": {
+      "who": "bob（member）",
+      "action": "delete_user",
+      "params": {
+        "id": "u3"
+      },
+      "allowed": true,
+      "result": {
+        "deleted": "u3",
+        "name": "carol"
+      },
+      "users_left": [
+        "alice",
+        "bob"
+      ]
+    },
+    "member_export": {
+      "who": "bob（member）",
+      "action": "export_users",
+      "params": {},
+      "allowed": true,
+      "result": [
+        {
+          "id": "u1",
+          "name": "alice",
+          "email": "alice@example.com"
+        },
+        {
+          "id": "u2",
+          "name": "bob",
+          "email": "bob@example.com"
+        },
+        {
+          "id": "u3",
+          "name": "carol",
+          "email": "carol@example.com"
+        }
+      ],
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    },
+    "quiz_role_param": {
+      "who": "bob（member）",
+      "action": "delete_user",
+      "params": {
+        "id": "u3",
+        "role": "admin"
+      },
+      "allowed": true,
+      "result": {
+        "deleted": "u3",
+        "name": "carol"
+      },
+      "users_left": [
+        "alice",
+        "bob"
+      ]
+    }
+  },
+  "solution": {
+    "admin_export": {
+      "who": "alice（admin）",
+      "action": "export_users",
+      "params": {},
+      "allowed": true,
+      "result": [
+        {
+          "id": "u1",
+          "name": "alice",
+          "email": "alice@example.com"
+        },
+        {
+          "id": "u2",
+          "name": "bob",
+          "email": "bob@example.com"
+        },
+        {
+          "id": "u3",
+          "name": "carol",
+          "email": "carol@example.com"
+        }
+      ],
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    },
+    "member_delete": {
+      "who": "bob（member）",
+      "action": "delete_user",
+      "params": {
+        "id": "u3"
+      },
+      "allowed": false,
+      "reason": "admin only",
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    },
+    "member_export": {
+      "who": "bob（member）",
+      "action": "export_users",
+      "params": {},
+      "allowed": false,
+      "reason": "admin only",
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    },
+    "quiz_role_param": {
+      "who": "bob（member）",
+      "action": "delete_user",
+      "params": {
+        "id": "u3",
+        "role": "admin"
+      },
+      "allowed": false,
+      "reason": "admin only",
+      "users_left": [
+        "alice",
+        "bob",
+        "carol"
+      ]
+    }
+  }
+}

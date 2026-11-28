@@ -1,0 +1,17 @@
+画像の URL の代わりにクラウドのメタデータの住所を渡しただけで、サーバーが鍵を取ってきてしまう。SSRF（サーバーサイド・リクエスト・フォージェリ）を、ホテルのコンシェルジュの例えと、手元のテスト用アプリを実際に動かした記録で解説します（ネットワークは使わず作り物で試しています）。
+
+0:00 SSRF とは
+0:19 1. ホテルのコンシェルジュで考える
+1:06 2. 実際に動かしてみる
+1:45 3. 実際に起きた事件（Microsoft Exchange Server CVE-2021-26855）
+2:26 4. 防ぐには（許可リストと、名前を引いた IP の確認）
+3:14 まとめ
+3:36 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab12_ssrf のソースそのままです。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab12_ssrf
+
+関連: CWE-918 ／ OWASP Top 10:2025 A01 Broken Access Control ／ ASVS V1.3.6
+CVSS は NVD の値（CVE-2021-26855: 9.8 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星

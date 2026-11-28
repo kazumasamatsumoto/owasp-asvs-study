@@ -1,0 +1,17 @@
+ファイルの名前の後ろに「; cat secret.env」と足しただけで、秘密のファイルの中身が出てきてしまう。OS コマンドインジェクションを、料理店の注文係の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 OS コマンドインジェクションとは
+0:21 1. 料理店の注文係で考える
+1:13 2. 実際に動かしてみる
+1:56 3. 実際に起きた事件（FileZen CVE-2026-25108）
+2:36 4. 防ぐには（shell=True をやめて引数をリストで渡す）
+3:22 まとめ
+3:45 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab11_command_injection のソースそのままです（open() で数える 2 行だけは例です）。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab11_command_injection
+
+関連: CWE-78 ／ OWASP Top 10:2025 A05 Injection ／ ASVS V1.2.5
+CVSS は NVD の値（CVE-2026-25108: 8.8 AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星

@@ -35,6 +35,12 @@ import ptDurations from './videos/pathTraversal/durations.json';
 import { SCRIPT as CI } from './videos/commandInjection/script';
 import { SCENES as CI_SCENES } from './videos/commandInjection/Scenes';
 import ciDurations from './videos/commandInjection/durations.json';
+import { SCRIPT as SSRF } from './videos/ssrf/script';
+import { SCENES as SSRF_SCENES } from './videos/ssrf/Scenes';
+import ssrfDurations from './videos/ssrf/durations.json';
+import { SCRIPT as DESER } from './videos/deserialization/script';
+import { SCENES as DESER_SCENES } from './videos/deserialization/Scenes';
+import deserDurations from './videos/deserialization/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -55,6 +61,8 @@ const sh = makeVideo('securityHeaders', SH, SH_SCENES, shDurations, { credit });
 const csrf = makeVideo('csrf', CSRF, CSRF_SCENES, csrfDurations, { credit });
 const pt = makeVideo('pathTraversal', PT, PT_SCENES, ptDurations, { credit });
 const ci = makeVideo('commandInjection', CI, CI_SCENES, ciDurations, { credit });
+const ssrf = makeVideo('ssrf', SSRF, SSRF_SCENES, ssrfDurations, { credit });
+const deser = makeVideo('deserialization', DESER, DESER_SCENES, deserDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -70,5 +78,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Csrf" component={csrf.Video} durationInFrames={csrf.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="PathTraversal" component={pt.Video} durationInFrames={pt.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="CommandInjection" component={ci.Video} durationInFrames={ci.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="Ssrf" component={ssrf.Video} durationInFrames={ssrf.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="Deserialization" component={deser.Video} durationInFrames={deser.frames} fps={FPS} width={1920} height={1080} />
   </>
 );

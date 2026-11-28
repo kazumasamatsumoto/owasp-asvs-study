@@ -8,5 +8,6 @@
   { "id": "yYDE6ARGENY", "video": "jwtVerification", "cwe": "CWE-347", "at": "2026-11-28T07:00:00+09:00" },
   { "id": "WykG4ziKcFo", "video": "securityHeaders", "cwe": "CWE-693", "at": "2026-11-29T07:00:00+09:00" },
   { "id": "SXHzMt02HT8", "video": "csrf", "cwe": "CWE-352", "at": "2026-11-30T07:00:00+09:00" },
-  { "id": "-KEV7FoSb8M", "video": "pathTraversal", "cwe": "CWE-22", "at": "2026-12-01T07:00:00+09:00" }
+  { "id": "-KEV7FoSb8M", "video": "pathTraversal", "cwe": "CWE-22", "at": "2026-12-01T07:00:00+09:00" },
+  { "id": "pkjOuOQjpBQ", "video": "commandInjection", "cwe": "CWE-78", "at": "2026-12-02T07:00:00+09:00" }
 ]
