@@ -37,5 +37,6 @@ python3 labs/run.py --solution   # 模範解答がテストを通ることの確
 | [12](lab12_ssrf/) | SSRF（メタデータ・localhost・DNS で内部 IP） | V1.3.6 | V1 |
 | [13](lab13_deserialization/) | 安全でないデシリアライズ（pickle → JSON と形の確認） | V1.5.2 | V1 |
 | [14](lab14_missing_authorization/) | 認可チェックの欠如（会員が管理者の操作をできる） | V8.2.1, V8.3.1 | V8 |
+| [15](lab15_code_injection/) | コードインジェクション（eval をやめて式を木で計算） | V1.3.2 | V1 |
 
 > ⚠️ これらは学習用の最小実装です。本番では実績あるフレームワーク・ライブラリの機能を使ってください。

@@ -1,0 +1,17 @@
+カートの Cookie を細工したものに入れ替えただけで、サーバーが読み戻した瞬間にこちらのコードが動いてしまう。安全でないデシリアライズを、家具の組み立ての例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 安全でないデシリアライズとは
+0:18 1. 家具の組み立てで考える
+1:08 2. 実際に動かしてみる
+1:42 3. 実際に起きた事件（Apache ActiveMQ CVE-2023-46604）
+2:23 4. 防ぐには（pickle をやめて JSON と形の確認）
+3:15 まとめ
+3:38 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab13_deserialization のソースそのままです。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab13_deserialization
+
+関連: CWE-502 ／ OWASP Top 10:2025 A08 Software or Data Integrity Failures ／ ASVS V1.5.2
+CVSS は NVD の値（CVE-2023-46604: 9.8 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星

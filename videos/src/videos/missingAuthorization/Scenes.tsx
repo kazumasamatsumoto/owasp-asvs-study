@@ -52,7 +52,7 @@ const Building: React.FC<{ at: (x: number) => number; guard?: boolean; intruder?
         <Card color={guard ? GREEN : C.red} style={{ width: 440, textAlign: 'center', transform: intruder ? `translateX(${shake(f, at(0.5), 12, 12)}px)` : undefined }}>
           <Label color={guard ? GREEN : C.red}>金庫室（役員だけ）</Label>
           <div style={{ fontSize: 90 }}>{guard ? '💂' : '🚪'}</div>
-          <Title size={34} color={guard ? GREEN : C.red}>{guard ? '扉の係が役職を確かめる' : '扉に 鍵も係もいない'}</Title>
+          <Title size={34} color={guard ? GREEN : C.red}>{guard ? '係が役職を確かめる' : '鍵も係もいない'}</Title>
         </Card>
       </Pop>
     </div>
@@ -268,20 +268,18 @@ const Cve = () => {
 const Cve2 = () => {
   const at = useAt();
   return (
-    <Center row gap={40}>
-      <Actor icon="🕵️" name="ログインしていない人" />
-      <Arrow d={at(0.15)} />
-      <Pop d={at(0.2)}>
-        <Card color={C.red} style={{ width: 640 }}>
-          <Mono size={36}>/api/snapshots/:key</Mono>
-          <div><Mono size={36}>/api/snapshots-delete/:deleteKey</Mono></div>
-        </Card>
-      </Pop>
-      <Arrow d={at(0.4)} />
-      <Pop d={at(0.45)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16 }}>
-        <div style={{ fontSize: 120 }}>📊</div>
-        <Sticker color={C.red}>見られる・消せる</Sticker>
-      </Pop>
+    <Center gap={30}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 40 }}>
+        <Actor icon="🕵️" name="ログインしていない人" size={130} />
+        <Arrow d={at(0.15)} />
+        <Pop d={at(0.2)}>
+          <Card color={C.red} style={{ width: 860 }}>
+            <Mono size={38}>/api/snapshots/:key</Mono>
+            <div><Mono size={38}>/api/snapshots-delete/:deleteKey</Mono></div>
+          </Card>
+        </Pop>
+      </div>
+      <Pop d={at(0.45)}><Sticker color={C.red}>📊 スナップショットを 見られる・消せる</Sticker></Pop>
     </Center>
   );
 };

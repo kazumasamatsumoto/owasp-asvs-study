@@ -1,0 +1,54 @@
+{
+  "exercise": {
+    "normal": {
+      "expr": "1 + 2 * 3",
+      "ok": true,
+      "value": "7",
+      "pwned_created": false
+    },
+    "read": {
+      "expr": "open(\"secret.env\").read()",
+      "ok": true,
+      "value": "'DB_PASSWORD=hunter2-sample'",
+      "pwned_created": false
+    },
+    "touch": {
+      "expr": "__import__(\"pathlib\").Path(\"pwned\").touch()",
+      "ok": true,
+      "value": "None",
+      "pwned_created": true
+    },
+    "quiz_pow": {
+      "expr": "2 ** 10",
+      "ok": true,
+      "value": "1024",
+      "pwned_created": false
+    }
+  },
+  "solution": {
+    "normal": {
+      "expr": "1 + 2 * 3",
+      "ok": true,
+      "value": "7",
+      "pwned_created": false
+    },
+    "read": {
+      "expr": "open(\"secret.env\").read()",
+      "ok": false,
+      "reason": "not allowed: Call",
+      "pwned_created": false
+    },
+    "touch": {
+      "expr": "__import__(\"pathlib\").Path(\"pwned\").touch()",
+      "ok": false,
+      "reason": "not allowed: Call",
+      "pwned_created": false
+    },
+    "quiz_pow": {
+      "expr": "2 ** 10",
+      "ok": false,
+      "reason": "not allowed: BinOp",
+      "pwned_created": false
+    }
+  }
+}
