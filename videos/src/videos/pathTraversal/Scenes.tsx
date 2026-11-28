@@ -24,7 +24,7 @@ const Row: React.FC<{ what: string; c: Case; d?: number; size?: number }> = ({ w
   <ResultRow
     what={what}
     input={c.name}
-    result={c.read ? `読めた「${c.content}」` : `拒否 ${c.reason}`}
+    result={c.read ? (c.content!.startsWith('DB_') ? '読めた（秘密の中身）' : `読めた「${c.content}」`) : `拒否 ${c.reason}`}
     ok={c.read}
     bad={c.read && c.content!.startsWith('DB_')}
     d={d}

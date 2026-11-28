@@ -1,0 +1,17 @@
+資料の名前に「../」を足しただけで、置き場所の外にある秘密のファイルが読めてしまう。パストラバーサルを、図書館の書庫の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 パストラバーサルとは
+0:17 1. 図書館の書庫で考える
+1:05 2. 実際に動かしてみる
+1:47 3. 実際に起きた事件（Apache HTTP Server CVE-2021-41773）
+2:32 4. 防ぐには（解決してから置き場所の中かを確かめる）
+3:26 まとめ
+3:48 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab10_path_traversal のソースそのままです（/download の 2 行だけは例です）。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab10_path_traversal
+
+関連: CWE-22 ／ OWASP Top 10:2025 A01 Broken Access Control ／ ASVS V5.3.2
+CVSS は NVD の値（CVE-2021-41773: 9.8 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星

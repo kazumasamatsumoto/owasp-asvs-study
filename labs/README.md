@@ -34,5 +34,6 @@ python3 labs/run.py --solution   # 模範解答がテストを通ることの確
 | [09](lab09_csrf/) | CSRF（Origin・偽造防止トークン・メソッド） | V3.5.1, V3.5.3 | V3 |
 | [10](lab10_path_traversal/) | パストラバーサル（../・絶対パス） | V5.3.2 | V5 |
 | [11](lab11_command_injection/) | OS コマンドインジェクション（shell=True） | V1.2.5 | V1 |
+| [12](lab12_ssrf/) | SSRF（メタデータ・localhost・DNS で内部 IP） | V1.3.6 | V1 |
 
 > ⚠️ これらは学習用の最小実装です。本番では実績あるフレームワーク・ライブラリの機能を使ってください。

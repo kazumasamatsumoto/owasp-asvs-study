@@ -1,0 +1,88 @@
+{
+  "exercise": {
+    "image": {
+      "url": "https://images.example.com/cat.png",
+      "resolved": "93.184.216.34",
+      "fetched": true,
+      "body": "（猫の画像）",
+      "went_to": [
+        "93.184.216.34:80/cat.png"
+      ]
+    },
+    "metadata": {
+      "url": "http://169.254.169.254/latest/meta-data/iam/",
+      "resolved": "169.254.169.254",
+      "fetched": true,
+      "body": "AccessKeyId=ASIA-SAMPLE / SecretAccessKey=sample-secret",
+      "went_to": [
+        "169.254.169.254:80/latest/meta-data/iam/"
+      ]
+    },
+    "localhost": {
+      "url": "http://localhost:8080/admin",
+      "resolved": "127.0.0.1",
+      "fetched": true,
+      "body": "管理画面：利用者を削除する",
+      "went_to": [
+        "127.0.0.1:8080/admin"
+      ]
+    },
+    "decimal": {
+      "url": "http://2130706433/",
+      "resolved": "127.0.0.1",
+      "fetched": true,
+      "body": "管理画面：利用者を削除する",
+      "went_to": [
+        "127.0.0.1:80/"
+      ]
+    },
+    "quiz_rebind": {
+      "url": "https://images.example.com/cat.png",
+      "resolved": "10.0.0.5",
+      "fetched": true,
+      "body": "社内の在庫システム",
+      "went_to": [
+        "10.0.0.5:80/cat.png"
+      ]
+    }
+  },
+  "solution": {
+    "image": {
+      "url": "https://images.example.com/cat.png",
+      "resolved": "93.184.216.34",
+      "fetched": true,
+      "body": "（猫の画像）",
+      "went_to": [
+        "93.184.216.34:443/cat.png"
+      ]
+    },
+    "metadata": {
+      "url": "http://169.254.169.254/latest/meta-data/iam/",
+      "resolved": "169.254.169.254",
+      "fetched": false,
+      "reason": "not in allowlist",
+      "went_to": []
+    },
+    "localhost": {
+      "url": "http://localhost:8080/admin",
+      "resolved": "127.0.0.1",
+      "fetched": false,
+      "reason": "not in allowlist",
+      "went_to": []
+    },
+    "decimal": {
+      "url": "http://2130706433/",
+      "resolved": "127.0.0.1",
+      "fetched": false,
+      "reason": "not in allowlist",
+      "went_to": []
+    },
+    "quiz_rebind": {
+      "url": "https://images.example.com/cat.png",
+      "resolved": "10.0.0.5",
+      "fetched": false,
+      "reason": "internal address",
+      "went_to": []
+    }
+  }
+}

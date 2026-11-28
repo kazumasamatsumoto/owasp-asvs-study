@@ -13,7 +13,7 @@
 | 7 | JWT の署名を検証しない | CWE-347 | labs/lab08 | jwtVerification | 予約済 | [yYDE6ARGENY](https://youtu.be/yYDE6ARGENY) | 4:28 | 2026-11-28 7:00 |
 | 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | securityHeaders | 予約済 | [WykG4ziKcFo](https://youtu.be/WykG4ziKcFo) | 4:34 | 2026-11-29 7:00 |
 | 9 | CSRF | CWE-352 | labs/lab09 | csrf | 予約済 | [SXHzMt02HT8](https://youtu.be/SXHzMt02HT8) | 4:08 | 2026-11-30 7:00 |
-| 10 | パストラバーサル | CWE-22 | labs/lab10 | | 未 | | | |
+| 10 | パストラバーサル | CWE-22 | labs/lab10 | pathTraversal | 予約済 | [-KEV7FoSb8M](https://youtu.be/-KEV7FoSb8M) | 4:27 | 2026-12-01 7:00 |
 | 11 | OS コマンドインジェクション | CWE-78 | labs/lab11 | | 未 | | | |
 | 12 | SSRF | CWE-918 | （Lab を追加） | | 未 | | | |
 | 13 | 安全でないデシリアライズ | CWE-502 | （Lab を追加） | | 未 | | | |
