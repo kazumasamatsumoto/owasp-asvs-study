@@ -14,7 +14,7 @@ type Side = Record<'normal' | 'evil' | 'quiz_negative', Case>;
 const EX = REC.exercise as unknown as Side;
 const SO = REC.solution as unknown as Side;
 
-const resultOf = (c: Case) => (c.pwned_created ? 'pwned が作られた' : c.loaded ? `読めた ${JSON.stringify(c.cart)}` : `拒否 ${c.reason}`);
+const resultOf = (c: Case) => (c.pwned_created ? 'pwned が作られた' : c.loaded ? '読めた（A1 × 2）' : `拒否 ${c.reason}`);
 const Row: React.FC<{ what: string; c: Case; d?: number; size?: number }> = ({ what, c, d, size = 32 }) => (
   <ResultRow what={what} input={c.cookie_head} result={resultOf(c)} ok={c.loaded && !c.pwned_created} bad={c.pwned_created} d={d} size={size} whatWidth={300} />
 );
@@ -230,8 +230,8 @@ const Cve = () => {
     <Center gap={30}>
       <Pop><Mono size={64} color={C.gold}>CVE-2023-46604</Mono></Pop>
       <Pop d={at(0.12)}><Title size={110}>Apache ActiveMQ</Title></Pop>
-      <Pop d={at(0.25)}><Title size={44} color={C.dim}>メッセージを配るソフト（OpenWire という通信の形式）</Title></Pop>
-      <Pop d={at(0.45)}><Sticker color={C.red}>届いたデータの型を細工 → 好きなクラスを作らせる</Sticker></Pop>
+      <Pop d={at(0.25)}><Title size={44} color={C.dim}>メッセージを配るソフト</Title></Pop>
+      <Pop d={at(0.45)} style={{ marginTop: 20 }}><Sticker color={C.red}>届いたデータの型を細工 → 好きなクラスを作らせる</Sticker></Pop>
     </Center>
   );
 };
@@ -392,7 +392,7 @@ const Answer = () => {
     <Center gap={26}>
       <Title size={70} color={GREEN}>受け付けない</Title>
       <Row what="qty が -3" c={SO.quiz_negative} d={at(0.15)} size={34} />
-      <Pop d={at(0.45)}><CodePanel snippet={K.SHAPE} highlight={[27, 28]} at={at(0.5)} fontSize={28} width={1600} maxLines={3} /></Pop>
+      <Pop d={at(0.45)}><CodePanel snippet={K.SHAPE} highlight={[27, 28]} at={at(0.5)} fontSize={27} width={1800} maxLines={4} /></Pop>
     </Center>
   );
 };
