@@ -1,0 +1,17 @@
+よく使われるパスワードを上から順に試しただけで、29 回目にアカウントに入れてしまう。回数制限がない（パスワードの総当たり）弱点を、ダイヤル錠の金庫の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 回数制限がないとは
+0:15 1. ダイヤル錠の金庫で考える
+0:55 2. 実際に動かしてみる
+1:28 3. 実際に起きた事件（pgAdmin 4 CVE-2026-116238）
+2:05 4. 防ぐには（失敗を数えて一定の回数でロック）
+2:58 まとめ
+3:21 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab17_rate_limit のソースそのままです。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab17_rate_limit
+
+関連: CWE-307 ／ OWASP Top 10:2025 A07 Authentication Failures ／ ASVS V6.3.1・V2.4.1
+CVSS は NVD の値（CVE-2026-116238: 9.8 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）。CISA の悪用確認リストには載っていません。
+
+VOICEVOX:青山龍星

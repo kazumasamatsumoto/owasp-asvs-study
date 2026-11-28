@@ -83,13 +83,13 @@ export const RefList: React.FC<{ refs: [string, string][]; at: (x: number) => nu
 );
 
 /** CVSS の点数と 3 つの指標 */
-export const CvssCard: React.FC<{ score: string; sev: string; chips: [string, string][]; at: (x: number) => number }> = ({ score, sev, chips, at }) => {
+export const CvssCard: React.FC<{ score: string; sev: string; chips: [string, string][]; at: (x: number) => number; source?: string }> = ({ score, sev, chips, at, source = 'NVD CVSS 3.1' }) => {
   const color = sev === 'Critical' ? C.red : C.fire;
   return (
     <Center gap={50}>
       <Pop>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 30 }}>
-          <Mono size={56} color={C.dim}>NVD CVSS 3.1</Mono>
+          <Mono size={56} color={C.dim}>{source}</Mono>
           <span style={{ fontFamily: sans, fontWeight: 900, fontSize: 200, color }}>{score}</span>
           <StickerLite color={color}>{sev}</StickerLite>
         </div>

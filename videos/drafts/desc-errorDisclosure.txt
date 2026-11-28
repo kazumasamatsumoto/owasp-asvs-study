@@ -1,0 +1,17 @@
+注文番号の後ろに引用符を 1 つ足しただけで、エラーと一緒に SQL 文とデータベースのサーバー名が返ってきてしまう。エラーで内部の情報が漏れる弱点を、銀行の窓口の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 エラーで内部の情報が漏れるとは
+0:19 1. 銀行の窓口で考える
+1:06 2. 実際に動かしてみる
+1:46 3. 実際に起きた事件（.NET Framework CVE-2024-29059）
+2:27 4. 防ぐには（利用者には短く、詳しくはログに）
+3:19 まとめ
+3:45 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab18_error_disclosure のソースそのままです（DEBUG = False の 1 行だけは例です）。SQL 文やサーバー名は演習用の作り物です。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab18_error_disclosure
+
+関連: CWE-209・CWE-200 ／ OWASP Top 10:2025 A02 Security Misconfiguration ／ ASVS V16.5.1・V13.4.2
+CVSS は NVD に載っている Microsoft の評価（CVE-2024-29059: 7.5 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N）
+
+VOICEVOX:青山龍星

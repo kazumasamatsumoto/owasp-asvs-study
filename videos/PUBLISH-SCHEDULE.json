@@ -14,5 +14,7 @@
   { "id": "noDzM0SG3k0", "video": "deserialization", "cwe": "CWE-502", "at": "2026-12-04T07:00:00+09:00" },
   { "id": "fXW7J1FukoY", "video": "missingAuthorization", "cwe": "CWE-862", "at": "2026-12-05T07:00:00+09:00" },
   { "id": "9DYEHBA27WY", "video": "codeInjection", "cwe": "CWE-94", "at": "2026-12-06T07:00:00+09:00" },
-  { "id": "xOWPzP8XYZ8", "video": "missingAuthentication", "cwe": "CWE-306", "at": "2026-12-07T07:00:00+09:00" }
+  { "id": "xOWPzP8XYZ8", "video": "missingAuthentication", "cwe": "CWE-306", "at": "2026-12-07T07:00:00+09:00" },
+  { "id": "dN8rdVZmxrY", "video": "rateLimit", "cwe": "CWE-307", "at": "2026-12-08T07:00:00+09:00" },
+  { "id": "djATHLnygVE", "video": "errorDisclosure", "cwe": "CWE-209", "at": "2026-12-09T07:00:00+09:00" }
 ]

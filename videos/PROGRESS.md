@@ -20,8 +20,8 @@
 | 14 | 認可チェックの欠如 | CWE-862 | labs/lab14 | missingAuthorization | 予約済 | [fXW7J1FukoY](https://youtu.be/fXW7J1FukoY) | 4:02 | 2026-12-05 7:00 |
 | 15 | コードインジェクション | CWE-94 | labs/lab15 | codeInjection | 予約済 | [9DYEHBA27WY](https://youtu.be/9DYEHBA27WY) | 4:01 | 2026-12-06 7:00 |
 | 16 | 重要な機能に認証がない | CWE-306 | labs/lab16 | missingAuthentication | 予約済 | [xOWPzP8XYZ8](https://youtu.be/xOWPzP8XYZ8) | 4:12 | 2026-12-07 7:00 |
-| 17 | 回数制限がない（総当たり） | CWE-307 | labs/lab17 | | 未 | | | |
-| 18 | エラーで内部情報が漏れる | CWE-209 | labs/lab18 | | 未 | | | |
+| 17 | 回数制限がない（総当たり） | CWE-307 | labs/lab17 | rateLimit | 予約済 | [dN8rdVZmxrY](https://youtu.be/dN8rdVZmxrY) | 3:53 | 2026-12-08 7:00 |
+| 18 | エラーで内部情報が漏れる | CWE-209 | labs/lab18 | errorDisclosure | 予約済 | [djATHLnygVE](https://youtu.be/djATHLnygVE) | 4:19 | 2026-12-09 7:00 |
 
 ## ショート
 

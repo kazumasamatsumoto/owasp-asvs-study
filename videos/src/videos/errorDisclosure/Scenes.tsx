@@ -24,8 +24,10 @@ const ROWS: [string, keyof Side][] = [
   ['無い注文', 'missing'],
 ];
 const shortBody = (c: Case) => {
-  const t = JSON.stringify(c.body);
-  return t.length > 44 ? `${t.slice(0, 44)}…` : t;
+  if (c.status === 200) return `${c.body.item}・${c.body.price} 円`;
+  const e = String(c.body.error);
+  if (LEAKY.test(JSON.stringify(c.body))) return 'SQL 文とサーバー名';
+  return c.body.incident ? `${e}（番号付き）` : e;
 };
 const Row: React.FC<{ what: string; c: Case; d?: number; size?: number }> = ({ what, c, d, size = 30 }) => {
   const leak = LEAKY.test(JSON.stringify(c.body));
@@ -253,7 +255,7 @@ const Cvss = () => {
   const at = useAt();
   return (
     <Center gap={10}>
-      <CvssCard score="7.5" sev="High" at={at} chips={[['AV:N', 'ネットワーク越し'], ['PR:N', 'ログイン不要'], ['C:H', '情報が大きく漏れる']]} />
+      <CvssCard source="CVSS 3.1（Microsoft）" score="7.5" sev="High" at={at} chips={[['AV:N', 'ネットワーク越し'], ['PR:N', 'ログイン不要'], ['C:H', '情報が大きく漏れる']]} />
     </Center>
   );
 };
