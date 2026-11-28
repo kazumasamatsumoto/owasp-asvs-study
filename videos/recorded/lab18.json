@@ -1,0 +1,64 @@
+{
+  "exercise": {
+    "ok": {
+      "order_id": "1001",
+      "status": 200,
+      "body": {
+        "id": "1001",
+        "item": "ノート",
+        "price": 300
+      },
+      "log": []
+    },
+    "quote": {
+      "order_id": "1001'",
+      "status": 500,
+      "body": {
+        "error": "DatabaseError: syntax error at or near \"'\" | query: SELECT id, item, price, card_last4 FROM orders WHERE id = '1001'' | server: db-primary.internal:5432 (PostgreSQL 15.2)"
+      },
+      "log": []
+    },
+    "missing": {
+      "order_id": "999",
+      "status": 404,
+      "body": {
+        "error": "order '999' not found"
+      },
+      "log": []
+    }
+  },
+  "solution": {
+    "ok": {
+      "order_id": "1001",
+      "status": 200,
+      "body": {
+        "id": "1001",
+        "item": "ノート",
+        "price": 300
+      },
+      "log": []
+    },
+    "quote": {
+      "order_id": "1001'",
+      "status": 500,
+      "body": {
+        "error": "internal error",
+        "incident": "2fe32a66"
+      },
+      "log": [
+        {
+          "incident": "2fe32a66",
+          "error": "DatabaseError: syntax error at or near \"'\" | query: SELECT id, item, price, card_last4 FROM orders WHERE id = '1001'' | server: db-primary.internal:5432 (PostgreSQL 15.2)"
+        }
+      ]
+    },
+    "missing": {
+      "order_id": "999",
+      "status": 404,
+      "body": {
+        "error": "not found"
+      },
+      "log": []
+    }
+  }
+}

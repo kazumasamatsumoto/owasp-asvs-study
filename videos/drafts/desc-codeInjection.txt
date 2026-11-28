@@ -1,0 +1,17 @@
+電卓の入力欄に計算式の代わりに Python のコードを書いただけで、サーバーの秘密のファイルが表示されてしまう。コードインジェクションを、計算係の秘書の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 コードインジェクションとは
+0:16 1. 計算係の秘書で考える
+1:00 2. 実際に動かしてみる
+1:34 3. 実際に起きた事件（Langflow CVE-2025-3248）
+2:14 4. 防ぐには（eval をやめて式を木で計算する）
+3:06 まとめ
+3:30 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab15_code_injection のソースそのままです（eval に __builtins__ を渡す 1 行だけは例です）。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab15_code_injection
+
+関連: CWE-94 ／ OWASP Top 10:2025 A05 Injection ／ ASVS V1.3.2
+CVSS は NVD の値（CVE-2025-3248: 9.8 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星
