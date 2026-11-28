@@ -1,0 +1,77 @@
+{
+  "exercise": {
+    "normal": {
+      "name": "report.txt",
+      "ok": true,
+      "output": [
+        "3 report.txt"
+      ],
+      "pwned_created": false
+    },
+    "semicolon": {
+      "name": "report.txt; cat secret.env",
+      "ok": true,
+      "output": [
+        "3 report.txt",
+        "DB_PASSWORD=hunter2-sample"
+      ],
+      "pwned_created": false
+    },
+    "and": {
+      "name": "report.txt && touch pwned",
+      "ok": true,
+      "output": [
+        "3 report.txt"
+      ],
+      "pwned_created": true
+    },
+    "subshell": {
+      "name": "$(touch pwned)",
+      "ok": true,
+      "output": [
+        "0"
+      ],
+      "pwned_created": true
+    },
+    "quiz_option": {
+      "name": "--version",
+      "ok": true,
+      "output": [],
+      "pwned_created": false
+    }
+  },
+  "solution": {
+    "normal": {
+      "name": "report.txt",
+      "ok": true,
+      "output": [
+        "3 report.txt"
+      ],
+      "pwned_created": false
+    },
+    "semicolon": {
+      "name": "report.txt; cat secret.env",
+      "ok": false,
+      "error": "wc: report.txt; cat secret.env: open: No such file or directory",
+      "pwned_created": false
+    },
+    "and": {
+      "name": "report.txt && touch pwned",
+      "ok": false,
+      "error": "wc: report.txt && touch pwned: open: No such file or directory",
+      "pwned_created": false
+    },
+    "subshell": {
+      "name": "$(touch pwned)",
+      "ok": false,
+      "error": "wc: $(touch pwned): open: No such file or directory",
+      "pwned_created": false
+    },
+    "quiz_option": {
+      "name": "--version",
+      "ok": false,
+      "error": "wc: --version: open: No such file or directory",
+      "pwned_created": false
+    }
+  }
+}

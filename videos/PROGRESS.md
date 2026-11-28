@@ -12,11 +12,16 @@
 | 6 | セッション固定 | CWE-384 | labs/lab06 | sessionFixation | 予約済 | [A6zy8u7zf5s](https://youtu.be/A6zy8u7zf5s) | 4:16 | 2026-11-27 7:00 |
 | 7 | JWT の署名を検証しない | CWE-347 | labs/lab08 | jwtVerification | 予約済 | [yYDE6ARGENY](https://youtu.be/yYDE6ARGENY) | 4:28 | 2026-11-28 7:00 |
 | 8 | セキュリティヘッダ | CWE-693 | labs/lab07 | securityHeaders | 予約済 | [WykG4ziKcFo](https://youtu.be/WykG4ziKcFo) | 4:34 | 2026-11-29 7:00 |
-| 9 | CSRF | CWE-352 | （Lab を追加） | | 未 | | | |
-| 10 | パストラバーサル | CWE-22 | （Lab を追加） | | 未 | | | |
-| 11 | OS コマンドインジェクション | CWE-78 | （Lab を追加） | | 未 | | | |
+| 9 | CSRF | CWE-352 | labs/lab09 | csrf | 予約済 | [SXHzMt02HT8](https://youtu.be/SXHzMt02HT8) | 4:08 | 2026-11-30 7:00 |
+| 10 | パストラバーサル | CWE-22 | labs/lab10 | | 未 | | | |
+| 11 | OS コマンドインジェクション | CWE-78 | labs/lab11 | | 未 | | | |
 | 12 | SSRF | CWE-918 | （Lab を追加） | | 未 | | | |
 | 13 | 安全でないデシリアライズ | CWE-502 | （Lab を追加） | | 未 | | | |
+| 14 | 認可チェックの欠如 | CWE-862 | （Lab を追加） | | 未 | | | |
+| 15 | コードインジェクション | CWE-94 | （Lab を追加） | | 未 | | | |
+| 16 | 重要な機能に認証がない | CWE-306 | （Lab を追加） | | 未 | | | |
+| 17 | 回数制限がない（総当たり） | CWE-770 | （Lab を追加） | | 未 | | | |
+| 18 | エラーで内部情報が漏れる | CWE-200 | （Lab を追加） | | 未 | | | |
 
 ## ショート
 

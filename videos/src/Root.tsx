@@ -26,6 +26,12 @@ import jwtDurations from './videos/jwtVerification/durations.json';
 import { SCRIPT as SH } from './videos/securityHeaders/script';
 import { SCENES as SH_SCENES } from './videos/securityHeaders/Scenes';
 import shDurations from './videos/securityHeaders/durations.json';
+import { SCRIPT as CSRF } from './videos/csrf/script';
+import { SCENES as CSRF_SCENES } from './videos/csrf/Scenes';
+import csrfDurations from './videos/csrf/durations.json';
+import { SCRIPT as PT } from './videos/pathTraversal/script';
+import { SCENES as PT_SCENES } from './videos/pathTraversal/Scenes';
+import ptDurations from './videos/pathTraversal/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -43,6 +49,8 @@ const ps = makeVideo('passwordStorage', PS, PS_SCENES, psDurations, { credit });
 const sf = makeVideo('sessionFixation', SF, SF_SCENES, sfDurations, { credit });
 const jwt = makeVideo('jwtVerification', JWT, JWT_SCENES, jwtDurations, { credit });
 const sh = makeVideo('securityHeaders', SH, SH_SCENES, shDurations, { credit });
+const csrf = makeVideo('csrf', CSRF, CSRF_SCENES, csrfDurations, { credit });
+const pt = makeVideo('pathTraversal', PT, PT_SCENES, ptDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -55,5 +63,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="SecurityHeaders" component={sh.Video} durationInFrames={sh.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="PasswordStorage" component={ps.Video} durationInFrames={ps.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="FileUploadShort" component={fuShort.Video} durationInFrames={fuShort.frames} fps={FPS} width={SHORT_W} height={SHORT_H} />
+    <Composition id="Csrf" component={csrf.Video} durationInFrames={csrf.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="PathTraversal" component={pt.Video} durationInFrames={pt.frames} fps={FPS} width={1920} height={1080} />
   </>
 );

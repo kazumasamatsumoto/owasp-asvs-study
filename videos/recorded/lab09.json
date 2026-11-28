@@ -1,0 +1,136 @@
+{
+  "exercise": {
+    "legit": {
+      "method": "POST",
+      "origin": "https://bank.example.com",
+      "form": {
+        "to": "bob",
+        "amount": "100",
+        "csrf_token": "（正しいトークン）"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "bob",
+        "amount": 100
+      }
+    },
+    "evil_form": {
+      "method": "POST",
+      "origin": "https://evil.example",
+      "form": {
+        "to": "mallory",
+        "amount": "500000"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "mallory",
+        "amount": 500000
+      }
+    },
+    "evil_img": {
+      "method": "GET",
+      "origin": null,
+      "form": {
+        "to": "mallory",
+        "amount": "500000"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "mallory",
+        "amount": 500000
+      }
+    },
+    "evil_guess": {
+      "method": "POST",
+      "origin": "https://evil.example",
+      "form": {
+        "to": "mallory",
+        "amount": "500000",
+        "csrf_token": "guess"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "mallory",
+        "amount": 500000
+      }
+    },
+    "quiz_get": {
+      "method": "GET",
+      "origin": "https://bank.example.com",
+      "form": {
+        "to": "mallory",
+        "amount": "500000",
+        "csrf_token": "（正しいトークン）"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "mallory",
+        "amount": 500000
+      }
+    }
+  },
+  "solution": {
+    "legit": {
+      "method": "POST",
+      "origin": "https://bank.example.com",
+      "form": {
+        "to": "bob",
+        "amount": "100",
+        "csrf_token": "（正しいトークン）"
+      },
+      "sent": true,
+      "result": {
+        "from": "alice",
+        "to": "bob",
+        "amount": 100
+      }
+    },
+    "evil_form": {
+      "method": "POST",
+      "origin": "https://evil.example",
+      "form": {
+        "to": "mallory",
+        "amount": "500000"
+      },
+      "sent": false,
+      "reason": "cross-site request"
+    },
+    "evil_img": {
+      "method": "GET",
+      "origin": null,
+      "form": {
+        "to": "mallory",
+        "amount": "500000"
+      },
+      "sent": false,
+      "reason": "method not allowed"
+    },
+    "evil_guess": {
+      "method": "POST",
+      "origin": "https://evil.example",
+      "form": {
+        "to": "mallory",
+        "amount": "500000",
+        "csrf_token": "guess"
+      },
+      "sent": false,
+      "reason": "cross-site request"
+    },
+    "quiz_get": {
+      "method": "GET",
+      "origin": "https://bank.example.com",
+      "form": {
+        "to": "mallory",
+        "amount": "500000",
+        "csrf_token": "（正しいトークン）"
+      },
+      "sent": false,
+      "reason": "method not allowed"
+    }
+  }
+}

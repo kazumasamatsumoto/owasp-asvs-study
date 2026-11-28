@@ -31,5 +31,8 @@ python3 labs/run.py --solution   # 模範解答がテストを通ることの確
 | [06](lab06_session/) | セッション固定・タイムアウト・Cookie 属性 | V7.2–V7.4, V3.3.x | V7 / V3 |
 | [07](lab07_security_headers/) | HSTS・CSP・CORS などのヘッダ | V3.4.x | V3 |
 | [08](lab08_jwt_verification/) | JWT の署名・alg・exp・aud 検証 | V9.1.x, V9.2.x | V9 |
+| [09](lab09_csrf/) | CSRF（Origin・偽造防止トークン・メソッド） | V3.5.1, V3.5.3 | V3 |
+| [10](lab10_path_traversal/) | パストラバーサル（../・絶対パス） | V5.3.2 | V5 |
+| [11](lab11_command_injection/) | OS コマンドインジェクション（shell=True） | V1.2.5 | V1 |
 
 > ⚠️ これらは学習用の最小実装です。本番では実績あるフレームワーク・ライブラリの機能を使ってください。

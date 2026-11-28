@@ -1,0 +1,56 @@
+{
+  "exercise": {
+    "normal": {
+      "name": "manual.txt",
+      "read": true,
+      "content": "使い方の説明書"
+    },
+    "parent": {
+      "name": "../secret.env",
+      "read": true,
+      "content": "DB_PASSWORD=hunter2-sample"
+    },
+    "inout": {
+      "name": "reports/../../secret.env",
+      "read": true,
+      "content": "DB_PASSWORD=hunter2-sample"
+    },
+    "absolute": {
+      "name": "/（一時ディレクトリ）/secret.env",
+      "read": true,
+      "content": "DB_PASSWORD=hunter2-sample"
+    },
+    "quiz_inside": {
+      "name": "reports/../manual.txt",
+      "read": true,
+      "content": "使い方の説明書"
+    }
+  },
+  "solution": {
+    "normal": {
+      "name": "manual.txt",
+      "read": true,
+      "content": "使い方の説明書"
+    },
+    "parent": {
+      "name": "../secret.env",
+      "read": false,
+      "reason": "outside of base"
+    },
+    "inout": {
+      "name": "reports/../../secret.env",
+      "read": false,
+      "reason": "outside of base"
+    },
+    "absolute": {
+      "name": "/（一時ディレクトリ）/secret.env",
+      "read": false,
+      "reason": "bad name"
+    },
+    "quiz_inside": {
+      "name": "reports/../manual.txt",
+      "read": true,
+      "content": "使い方の説明書"
+    }
+  }
+}

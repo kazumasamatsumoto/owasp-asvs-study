@@ -1,0 +1,17 @@
+銀行にログインしたまま知らないサイトを開いただけで、50 万円が送金されてしまう。CSRF（クロスサイト・リクエスト・フォージェリ）を、会社の受付の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 CSRF とは
+0:15 1. 会社の受付で考える
+1:04 2. 実際に動かしてみる
+1:39 3. 実際に起きた事件（PaperCut CVE-2023-2533）
+2:22 4. 防ぐには（POST・Origin・CSRF トークン）
+3:12 まとめ
+3:36 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab09_csrf のソースそのままです（Set-Cookie の 1 行だけは例です）。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab09_csrf
+
+関連: CWE-352 ／ OWASP Top 10:2025 A01 Broken Access Control ／ ASVS V3.5.1・V3.5.3
+CVSS は NVD の値（CVE-2023-2533: 8.8 AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H）
+
+VOICEVOX:青山龍星
