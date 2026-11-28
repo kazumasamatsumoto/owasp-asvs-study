@@ -1,0 +1,17 @@
+ログインせずに運用向けの URL を開いただけで、データベースのパスワードと API キーが表示されてしまう。重要な機能に認証がない弱点を、マンションの裏口の例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 重要な機能に認証がないとは
+0:18 1. マンションの裏口で考える
+1:07 2. 実際に動かしてみる
+1:49 3. 実際に起きた事件（Veeam Backup & Replication CVE-2023-27532）
+2:31 4. 防ぐには（既定で守り、公開する道だけを決める）
+3:18 まとめ
+3:41 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab16_missing_authentication のソースそのままです。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab16_missing_authentication
+
+関連: CWE-306 ／ OWASP Top 10:2025 A07 Authentication Failures ／ ASVS V8.2.1・V13.4.5
+CVSS は NVD の値（CVE-2023-27532: 7.5 AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N）
+
+VOICEVOX:青山龍星

@@ -50,6 +50,12 @@ import ci2Durations from './videos/codeInjection/durations.json';
 import { SCRIPT as MAUTHN } from './videos/missingAuthentication/script';
 import { SCENES as MAUTHN_SCENES } from './videos/missingAuthentication/Scenes';
 import mauthnDurations from './videos/missingAuthentication/durations.json';
+import { SCRIPT as RL } from './videos/rateLimit/script';
+import { SCENES as RL_SCENES } from './videos/rateLimit/Scenes';
+import rlDurations from './videos/rateLimit/durations.json';
+import { SCRIPT as ED } from './videos/errorDisclosure/script';
+import { SCENES as ED_SCENES } from './videos/errorDisclosure/Scenes';
+import edDurations from './videos/errorDisclosure/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -75,6 +81,8 @@ const deser = makeVideo('deserialization', DESER, DESER_SCENES, deserDurations, 
 const ma = makeVideo('missingAuthorization', MA, MA_SCENES, maDurations, { credit });
 const ci2 = makeVideo('codeInjection', CI2, CI2_SCENES, ci2Durations, { credit });
 const mauthn = makeVideo('missingAuthentication', MAUTHN, MAUTHN_SCENES, mauthnDurations, { credit });
+const rl = makeVideo('rateLimit', RL, RL_SCENES, rlDurations, { credit });
+const ed = makeVideo('errorDisclosure', ED, ED_SCENES, edDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -95,5 +103,7 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="MissingAuthorization" component={ma.Video} durationInFrames={ma.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="CodeInjection" component={ci2.Video} durationInFrames={ci2.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="MissingAuthentication" component={mauthn.Video} durationInFrames={mauthn.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="RateLimit" component={rl.Video} durationInFrames={rl.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="ErrorDisclosure" component={ed.Video} durationInFrames={ed.frames} fps={FPS} width={1920} height={1080} />
   </>
 );
