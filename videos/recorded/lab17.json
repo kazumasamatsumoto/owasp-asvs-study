@@ -1,0 +1,329 @@
+{
+  "words": 30,
+  "exercise": {
+    "normal": "success",
+    "tries": [
+      {
+        "n": 1,
+        "password": "123456",
+        "result": "fail"
+      },
+      {
+        "n": 2,
+        "password": "password",
+        "result": "fail"
+      },
+      {
+        "n": 3,
+        "password": "qwerty",
+        "result": "fail"
+      },
+      {
+        "n": 4,
+        "password": "111111",
+        "result": "fail"
+      },
+      {
+        "n": 5,
+        "password": "abc123",
+        "result": "fail"
+      },
+      {
+        "n": 6,
+        "password": "letmein",
+        "result": "fail"
+      },
+      {
+        "n": 7,
+        "password": "welcome",
+        "result": "fail"
+      },
+      {
+        "n": 8,
+        "password": "monkey",
+        "result": "fail"
+      },
+      {
+        "n": 9,
+        "password": "dragon",
+        "result": "fail"
+      },
+      {
+        "n": 10,
+        "password": "iloveyou",
+        "result": "fail"
+      },
+      {
+        "n": 11,
+        "password": "admin",
+        "result": "fail"
+      },
+      {
+        "n": 12,
+        "password": "princess",
+        "result": "fail"
+      },
+      {
+        "n": 13,
+        "password": "football",
+        "result": "fail"
+      },
+      {
+        "n": 14,
+        "password": "baseball",
+        "result": "fail"
+      },
+      {
+        "n": 15,
+        "password": "master",
+        "result": "fail"
+      },
+      {
+        "n": 16,
+        "password": "shadow",
+        "result": "fail"
+      },
+      {
+        "n": 17,
+        "password": "superman",
+        "result": "fail"
+      },
+      {
+        "n": 18,
+        "password": "michael",
+        "result": "fail"
+      },
+      {
+        "n": 19,
+        "password": "sunshine",
+        "result": "fail"
+      },
+      {
+        "n": 20,
+        "password": "trustno1",
+        "result": "fail"
+      },
+      {
+        "n": 21,
+        "password": "hello123",
+        "result": "fail"
+      },
+      {
+        "n": 22,
+        "password": "freedom",
+        "result": "fail"
+      },
+      {
+        "n": 23,
+        "password": "whatever",
+        "result": "fail"
+      },
+      {
+        "n": 24,
+        "password": "qazwsx",
+        "result": "fail"
+      },
+      {
+        "n": 25,
+        "password": "passw0rd",
+        "result": "fail"
+      },
+      {
+        "n": 26,
+        "password": "starwars",
+        "result": "fail"
+      },
+      {
+        "n": 27,
+        "password": "summer2024",
+        "result": "fail"
+      },
+      {
+        "n": 28,
+        "password": "winter2024",
+        "result": "fail"
+      },
+      {
+        "n": 29,
+        "password": "sunshine2024",
+        "result": "success"
+      },
+      {
+        "n": 30,
+        "password": "zaq12wsx",
+        "result": "fail"
+      }
+    ],
+    "found_at": 29,
+    "counts": {
+      "fail": 29,
+      "locked": 0,
+      "success": 1
+    },
+    "quiz_owner_right_after": "success",
+    "owner_after_15min": "success"
+  },
+  "solution": {
+    "normal": "success",
+    "tries": [
+      {
+        "n": 1,
+        "password": "123456",
+        "result": "fail"
+      },
+      {
+        "n": 2,
+        "password": "password",
+        "result": "fail"
+      },
+      {
+        "n": 3,
+        "password": "qwerty",
+        "result": "fail"
+      },
+      {
+        "n": 4,
+        "password": "111111",
+        "result": "fail"
+      },
+      {
+        "n": 5,
+        "password": "abc123",
+        "result": "fail"
+      },
+      {
+        "n": 6,
+        "password": "letmein",
+        "result": "locked"
+      },
+      {
+        "n": 7,
+        "password": "welcome",
+        "result": "locked"
+      },
+      {
+        "n": 8,
+        "password": "monkey",
+        "result": "locked"
+      },
+      {
+        "n": 9,
+        "password": "dragon",
+        "result": "locked"
+      },
+      {
+        "n": 10,
+        "password": "iloveyou",
+        "result": "locked"
+      },
+      {
+        "n": 11,
+        "password": "admin",
+        "result": "locked"
+      },
+      {
+        "n": 12,
+        "password": "princess",
+        "result": "locked"
+      },
+      {
+        "n": 13,
+        "password": "football",
+        "result": "locked"
+      },
+      {
+        "n": 14,
+        "password": "baseball",
+        "result": "locked"
+      },
+      {
+        "n": 15,
+        "password": "master",
+        "result": "locked"
+      },
+      {
+        "n": 16,
+        "password": "shadow",
+        "result": "locked"
+      },
+      {
+        "n": 17,
+        "password": "superman",
+        "result": "locked"
+      },
+      {
+        "n": 18,
+        "password": "michael",
+        "result": "locked"
+      },
+      {
+        "n": 19,
+        "password": "sunshine",
+        "result": "locked"
+      },
+      {
+        "n": 20,
+        "password": "trustno1",
+        "result": "locked"
+      },
+      {
+        "n": 21,
+        "password": "hello123",
+        "result": "locked"
+      },
+      {
+        "n": 22,
+        "password": "freedom",
+        "result": "locked"
+      },
+      {
+        "n": 23,
+        "password": "whatever",
+        "result": "locked"
+      },
+      {
+        "n": 24,
+        "password": "qazwsx",
+        "result": "locked"
+      },
+      {
+        "n": 25,
+        "password": "passw0rd",
+        "result": "locked"
+      },
+      {
+        "n": 26,
+        "password": "starwars",
+        "result": "locked"
+      },
+      {
+        "n": 27,
+        "password": "summer2024",
+        "result": "locked"
+      },
+      {
+        "n": 28,
+        "password": "winter2024",
+        "result": "locked"
+      },
+      {
+        "n": 29,
+        "password": "sunshine2024",
+        "result": "locked"
+      },
+      {
+        "n": 30,
+        "password": "zaq12wsx",
+        "result": "locked"
+      }
+    ],
+    "found_at": null,
+    "counts": {
+      "fail": 5,
+      "locked": 25,
+      "success": 0
+    },
+    "quiz_owner_right_after": "locked",
+    "owner_after_15min": "success"
+  }
+}

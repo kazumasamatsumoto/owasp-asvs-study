@@ -1,0 +1,94 @@
+{
+  "exercise": {
+    "health": {
+      "path": "/health",
+      "who": "ログインなし",
+      "ok": true,
+      "body": {
+        "status": "ok"
+      }
+    },
+    "me_anon": {
+      "path": "/api/me",
+      "who": "ログインなし",
+      "ok": false,
+      "error": "Unauthorized",
+      "reason": "login required"
+    },
+    "env_anon": {
+      "path": "/internal/env",
+      "who": "ログインなし",
+      "ok": true,
+      "body": {
+        "DB_URL": "postgres://app:hunter2-sample@db/app",
+        "API_KEY": "sk-sample-0000"
+      }
+    },
+    "backup_anon": {
+      "path": "/internal/backup",
+      "who": "ログインなし",
+      "ok": true,
+      "body": {
+        "rows": [
+          {
+            "id": 1,
+            "name": "alice",
+            "email": "alice@example.com"
+          },
+          {
+            "id": 2,
+            "name": "bob",
+            "email": "bob@example.com"
+          }
+        ]
+      }
+    },
+    "quiz_env_member": {
+      "path": "/internal/env",
+      "who": "会員の alice",
+      "ok": true,
+      "body": {
+        "DB_URL": "postgres://app:hunter2-sample@db/app",
+        "API_KEY": "sk-sample-0000"
+      }
+    }
+  },
+  "solution": {
+    "health": {
+      "path": "/health",
+      "who": "ログインなし",
+      "ok": true,
+      "body": {
+        "status": "ok"
+      }
+    },
+    "me_anon": {
+      "path": "/api/me",
+      "who": "ログインなし",
+      "ok": false,
+      "error": "Unauthorized",
+      "reason": "login required"
+    },
+    "env_anon": {
+      "path": "/internal/env",
+      "who": "ログインなし",
+      "ok": false,
+      "error": "Unauthorized",
+      "reason": "login required"
+    },
+    "backup_anon": {
+      "path": "/internal/backup",
+      "who": "ログインなし",
+      "ok": false,
+      "error": "Unauthorized",
+      "reason": "login required"
+    },
+    "quiz_env_member": {
+      "path": "/internal/env",
+      "who": "会員の alice",
+      "ok": false,
+      "error": "Forbidden",
+      "reason": "admin only"
+    }
+  }
+}

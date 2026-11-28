@@ -17,10 +17,10 @@
 | 11 | OS コマンドインジェクション | CWE-78 | labs/lab11 | commandInjection | 予約済 | [pkjOuOQjpBQ](https://youtu.be/pkjOuOQjpBQ) | 4:19 | 2026-12-02 7:00 |
 | 12 | SSRF | CWE-918 | labs/lab12 | ssrf | 予約済 | [hFGA2tmkhbk](https://youtu.be/hFGA2tmkhbk) | 4:14 | 2026-12-03 7:00 |
 | 13 | 安全でないデシリアライズ | CWE-502 | labs/lab13 | deserialization | 予約済 | [noDzM0SG3k0](https://youtu.be/noDzM0SG3k0) | 4:08 | 2026-12-04 7:00 |
-| 14 | 認可チェックの欠如 | CWE-862 | labs/lab14 | | 未 | | | |
+| 14 | 認可チェックの欠如 | CWE-862 | labs/lab14 | missingAuthorization | 予約済 | [fXW7J1FukoY](https://youtu.be/fXW7J1FukoY) | 4:02 | 2026-12-05 7:00 |
 | 15 | コードインジェクション | CWE-94 | labs/lab15 | | 未 | | | |
-| 16 | 重要な機能に認証がない | CWE-306 | （Lab を追加） | | 未 | | | |
-| 17 | 回数制限がない（総当たり） | CWE-770 | （Lab を追加） | | 未 | | | |
+| 16 | 重要な機能に認証がない | CWE-306 | labs/lab16 | | 未 | | | |
+| 17 | 回数制限がない（総当たり） | CWE-770 | labs/lab17 | | 未 | | | |
 | 18 | エラーで内部情報が漏れる | CWE-200 | （Lab を追加） | | 未 | | | |
 
 ## ショート

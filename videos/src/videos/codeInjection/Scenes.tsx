@@ -281,9 +281,9 @@ const Shop5 = () => {
       <Actor icon="🧑‍💼" name="秘書" />
       <Arrow d={at(0.2)} />
       <Pop d={at(0.25)}>
-        <Card color={GREEN} style={{ width: 760, textAlign: 'center' }}>
+        <Card color={GREEN} style={{ width: 980, textAlign: 'center' }}>
           <Label color={GREEN}>読むのは これだけ</Label>
-          <Mono size={60}>0-9  .  +  -  ×  ÷  ( )</Mono>
+          <Mono size={54}>0-9  .  +  -  ×  ÷  ( )</Mono>
         </Card>
       </Pop>
     </Center>

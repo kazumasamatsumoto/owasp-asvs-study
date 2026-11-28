@@ -11,5 +11,6 @@
   { "id": "-KEV7FoSb8M", "video": "pathTraversal", "cwe": "CWE-22", "at": "2026-12-01T07:00:00+09:00" },
   { "id": "pkjOuOQjpBQ", "video": "commandInjection", "cwe": "CWE-78", "at": "2026-12-02T07:00:00+09:00" },
   { "id": "hFGA2tmkhbk", "video": "ssrf", "cwe": "CWE-918", "at": "2026-12-03T07:00:00+09:00" },
-  { "id": "noDzM0SG3k0", "video": "deserialization", "cwe": "CWE-502", "at": "2026-12-04T07:00:00+09:00" }
+  { "id": "noDzM0SG3k0", "video": "deserialization", "cwe": "CWE-502", "at": "2026-12-04T07:00:00+09:00" },
+  { "id": "fXW7J1FukoY", "video": "missingAuthorization", "cwe": "CWE-862", "at": "2026-12-05T07:00:00+09:00" }
 ]

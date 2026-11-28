@@ -47,6 +47,9 @@ import maDurations from './videos/missingAuthorization/durations.json';
 import { SCRIPT as CI2 } from './videos/codeInjection/script';
 import { SCENES as CI2_SCENES } from './videos/codeInjection/Scenes';
 import ci2Durations from './videos/codeInjection/durations.json';
+import { SCRIPT as MAUTHN } from './videos/missingAuthentication/script';
+import { SCENES as MAUTHN_SCENES } from './videos/missingAuthentication/Scenes';
+import mauthnDurations from './videos/missingAuthentication/durations.json';
 
 const credit = 'VOICEVOX:青山龍星';
 const sqli = makeVideo('sqlInjection', SQLI, SQLI_SCENES, sqliDurations, { credit });
@@ -71,6 +74,7 @@ const ssrf = makeVideo('ssrf', SSRF, SSRF_SCENES, ssrfDurations, { credit });
 const deser = makeVideo('deserialization', DESER, DESER_SCENES, deserDurations, { credit });
 const ma = makeVideo('missingAuthorization', MA, MA_SCENES, maDurations, { credit });
 const ci2 = makeVideo('codeInjection', CI2, CI2_SCENES, ci2Durations, { credit });
+const mauthn = makeVideo('missingAuthentication', MAUTHN, MAUTHN_SCENES, mauthnDurations, { credit });
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -90,5 +94,6 @@ export const RemotionRoot: React.FC = () => (
     <Composition id="Deserialization" component={deser.Video} durationInFrames={deser.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="MissingAuthorization" component={ma.Video} durationInFrames={ma.frames} fps={FPS} width={1920} height={1080} />
     <Composition id="CodeInjection" component={ci2.Video} durationInFrames={ci2.frames} fps={FPS} width={1920} height={1080} />
+    <Composition id="MissingAuthentication" component={mauthn.Video} durationInFrames={mauthn.frames} fps={FPS} width={1920} height={1080} />
   </>
 );

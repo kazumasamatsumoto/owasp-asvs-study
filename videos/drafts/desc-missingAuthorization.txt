@@ -1,0 +1,17 @@
+ふつうの会員が管理画面の API を呼んだだけで、ほかの会員が削除されてしまう。認可チェックの欠如を、会社のビルの例えと、手元のテスト用アプリを実際に動かした記録で解説します。
+
+0:00 認可チェックの欠如とは
+0:17 1. 会社のビルで考える
+1:03 2. 実際に動かしてみる
+1:39 3. 実際に起きた事件（Grafana CVE-2021-39226）
+2:17 4. 防ぐには（操作ごとにサーバー側で役割を確かめる）
+3:06 まとめ
+3:31 クイズ
+
+画面のコードは owasp-asvs-study の labs/lab14_missing_authorization のソースそのままです。
+演習（自分で直せます）: https://github.com/kazumasamatsumoto/owasp-asvs-study/tree/main/labs/lab14_missing_authorization
+
+関連: CWE-862 ／ OWASP Top 10:2025 A01 Broken Access Control ／ ASVS V8.2.1・V8.3.1
+CVSS は NVD の値（CVE-2021-39226: 7.3 AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L）
+
+VOICEVOX:青山龍星
